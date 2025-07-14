@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>Green Space Academy</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/Green_4.png" type="image/x-icon">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="shortcut icon" href="images/Green_4.png" type="image/x-icon">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+<script>
+    // Function to load header and footer
+    function loadHeaderAndFooter() {
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    }
+
+    // Call the function to load header and footer
+    loadHeaderAndFooter();
+</script>
+
+<style>
+    .image-button-container {
+        position: relative;
+        /* Enable relative positioning for button */
+        width: 100%;
+        /* Adjust width as needed */
+        height: 300px;
+        /* Adjust height as needed */
+    }
+
+    .background-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Ensure image covers the container */
+        opacity: 0.7;
+        /* Add some transparency */
+    }
+
+    .call-to-action {
+        position: absolute;
+        /* Position button on top of image */
+        bottom: 20px;
+        /* Adjust button position from bottom */
+        left: 50%;
+        /* Center button horizontally */
+        transform: translateX(-50%);
+        /* Center button precisely */
+        padding: 1rem 2rem;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .popup-content {
+        position: fixed;
+        /* Fix popup position */
+        top: 50%;
+        /* Center popup vertically */
+        left: 50%;
+        /* Center popup horizontally */
+        transform: translate(-50%, -50%);
+        /* Center popup precisely */
+        width: 500px;
+        /* Adjust popup width */
+        background-color: #fff;
+        padding: 2rem;
+        border: 1px solid #ddd;
+        display: none;
+        /* Initially hide the popup */
+        z-index: 10;
+        /* Ensure popup appears above other elements */
+    }
+
+    .close-popup {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+
+</head>
+
+<body class="host_version">
+
+    <!-- LOADER -->
+    <!-- <div id="preloader">
+        <div class="loader-container">
+            <div class="progress-br float shadow">
+                <div class="progress__item"></div>
+            </div>
+        </div>
+    </div> -->
+    <!-- END LOADER -->
+
+    <div class="modal fade" id="joinFormModal" tabindex="-1" role="dialog" aria-labelledby="joinFormModalLabel"
+        aria-hidden="true" style="z-index: 10000;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="joinFormModalLabel">Join Our Mentorship Program</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Your form goes here -->
+                    <form id="joinForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <!-- Add more form fields as needed -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" form="joinForm" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start header -->
+    <div id="header"></div>
+    <!-- End header -->
+
+    <div class="all-title-box-2">
+        <div class="all-title-box-4-overlay"></div>
+        <div class="container text-center">
+            <h1>Youth Climate Platform
+                <span class="m_1">
+                    Climate action starts with young people
+                </span>
+            </h1>
+        </div>
+    </div>
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>About The Program</h2>
+                <p>Co-creating Climate solution together</p>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h4>Co-creating Climate solution together</h4>
+                        <h2>Shared Climate Space </h2>
+                        <p>
+                            Climate activists and youth in grassroots communities have inadequate funds and resources to
+                            purchase advocacy materials, secure a location for co-creating, meetings, and trainings. We
+                            have created the youth climate space to provide a centralized space for youth climate
+                            activist and to provide materials and resources young people need to lead climate change
+                            advocacy. But that not all!
+                        </p>
+                        <p>
+                            We work closely with young climate leaders to understand their vision and unique challenges,
+                            spark ideas, build coalitions, and co-create solutions through our monthly mentorship and
+                            master classes that build their leadership skills, foster collaboration, encourage
+                            networking and resource sharing
+                            Book a climate share space for your event or hop in and join our monthly mentorship /
+                            masterclass.
+
+                        </p>
+                        <span><a href="" style="color: red; padding: 0;" data-toggle="modal" data-target="#joinFormModal">Fill out the form to join our mentorship
+                                program. </a></span>
+                        <span><a href="" style="color: red; padding: 0;" data-toggle="modal" data-target="#joinFormModal">Become a mentor today and support a youth
+                                project. </a></span>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/8-51/shared space.jpg" alt="" class="img-fluid img-rounded">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <h3>Youth Leadership, Arts and Storytelling’s Workshops (YLASW)</h3>
+                    <img src="images/greenspace/youth-climate-platform-1.jpg" class="img-fluid rounded-4 mb-4" alt="">
+                    <!-- <p>
+                        Climate activists and youth in grassroots communities have inadequate funds and resources to
+                        purchase advocacy materials, secure a location for co-creating, meetings, and trainings. We have
+                        created the youth climate space to provide a centralized space for youth climate activist and to
+                        provide materials and resources young people need to lead climate change advocacy. But that not
+                        all!
+                    </p>
+                    <p>
+                        We work closely with young climate leaders to understand their vision and unique challenges,
+                        spark ideas, build coalitions, and co-create solutions through our monthly mentorship and master
+                        classes that build their leadership skills, foster collaboration, encourage networking and
+                        resource sharing Book a climate share space for your event or hop in and join our monthly
+                        mentorship / masterclass
+                    </p> -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="content ps-0 ps-lg-5">
+                        <p class="fst-italic">
+                            YLASW provide platform for young people to explore the intersection of creativity,
+                            leadership, and environmental advocacy through interactive sessions that engage and train
+                            participants on h how to amplify their voices, communicate effectively, and advocate for
+                            environmental causes using the medium of storytelling and artistic expression
+                        </p>
+                        <p class="fst-italic">
+                            Key Activities
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check-circle-fill"></i>Visual Arts Workshops: Explore various art forms,
+                                such as painting, drawing, and sculpture, to express environmental themes and messages
+                                through creative visual representations.</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Storytelling Sessions: Participate in
+                                storytelling workshops that emphasize the power of narrative in conveying environmental
+                                messages and inspiring positive change.</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Performance Showcases: Showcase artistic
+                                creations and storytelling performances that reflect participants' passion for
+                                environmental advocacy and sustainability</li>
+                        </ul>
+                        <!-- <div class="position-relative mt-4">
+                            <img src="images/greenspace/IMG_2418.JPG" class="img-fluid rounded-4" alt="">
+                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+
+            <section class="image-button-container" style="z-index: 10000;">
+                <img src="images/8-51/shared space.jpg" alt="Background Image" class="background-image">
+                <button class="call-to-action">Co-creating Climate solution together</button>
+                <div class="popup-content">
+                    <h2>Co-creating Climate solution together</h2>
+                    <p>Climate activists and youth in grassroots communities have inadequate funds and resources to
+                        purchase advocacy materials, secure a location for co-creating, meetings, and trainings. We
+                        have created the youth climate space to provide a centralized space for youth climate
+                        activist and to provide materials and resources young people need to lead climate change
+                        advocacy.</p>
+                    <button class="close-popup">Close</button>
+                </div>
+            </section>
+
+        </div>
+    </section><!-- End About Us Section -->
+
+    <div id="footer"></div>
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+    <script>
+        const callToAction = document.querySelector('.call-to-action');
+        const popupContent = document.querySelector('.popup-content');
+        const closePopup = document.querySelector('.close-popup');
+
+        callToAction.addEventListener('click', () => {
+            popupContent.style.display = 'block';
+            // Add overlay effect here (optional)
+        });
+
+        closePopup.addEventListener('click', () => {
+            popupContent.style.display = 'none';
+            // Remove overlay effect here (optional)
+        });
+    </script>
+
+</body>
+
+</html>

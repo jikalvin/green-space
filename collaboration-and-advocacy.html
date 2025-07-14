@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>Green Space Academy</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/Green_4.png" type="image/x-icon">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="shortcut icon" href="images/Green_4.png" type="image/x-icon">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+<!-- Site CSS -->
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+<script>
+    // Function to load header and footer
+    function loadHeaderAndFooter() {
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    }
+
+    // Call the function to load header and footer
+    loadHeaderAndFooter();
+</script>
+
+</head>
+
+<body class="host_version">
+
+    <!-- LOADER -->
+    <!-- <div id="preloader">
+        <div class="loader-container">
+            <div class="progress-br float shadow">
+                <div class="progress__item"></div>
+            </div>
+        </div>
+    </div> -->
+    <!-- END LOADER -->
+
+    <div class="modal fade" id="joinFormModal" tabindex="-1" role="dialog" aria-labelledby="joinFormModalLabel"
+        aria-hidden="true" style="z-index: 10000;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="joinFormModalLabel">Join Our Mentorship Program</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Your form goes here -->
+                    <form id="joinForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <!-- Add more form fields as needed -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" form="joinForm" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Start header -->
+    <div id="header"></div>
+    <!-- End header -->
+
+    <div class="all-title-box-1">
+        <div class="all-title-box-4-overlay"></div>
+        <div class="container text-center">
+            <h1>Collaboration And Advocacy
+                <span class="m_1">
+                    Climate action starts with young people
+                </span>
+            </h1>
+        </div>
+    </div>
+
+    <div id="overviews" class="section lb bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>What we do</h2>
+                <p>We mobilize and engage individuals and youth groups <br> to build a common agenda</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h4>youth-led climate initiatives</h4>
+                        <h2>Community</h2>
+                        <p>Our Community offers a safe and inclusive community for youth to meaningfully engage in
+                            climate action. We connect, support, and amplify the work and voices of young activists,
+                            initiatives, innovators, and grassroots youths to address climate change. We believe that
+                            together we can achieve more. That's why, instead of working in isolation, we mobilize and
+                            engage individuals and youth groups to build a common agenda, share priorities, increase
+                            trust, and foster an abundance mindset as we champion climate action.</p>
+                        <span><a href="" style="color: red; padding: 0;" data-toggle="modal" data-target="#joinFormModal">Fill out the form to join our mentorship
+                                program >>> </a></span>
+                        <span><a href="" style="color: red; padding: 0;" data-toggle="modal" data-target="#joinFormModal">Become a mentor today and support a youth
+                                project >>> </a></span>
+                        <a href="#" style="color: red; padding: 0;" data-toggle="modal" data-target="#joinFormModal"><span>Join
+                                Our Community >>></span></a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/greenspace/about - 3.jpg" alt=""
+                            class="img-fluid img-rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <div class="horizontal-content">
+                            <i class="flaticon-server global-radius effect-1"></i>
+                            <h3>Climate Action Café</h3>
+                        </div>
+                        <p>We offer an inclusive space for climate activists, individuals, and youth climate
+                            organizations to connect, spark new ideas, support existing initiatives, mobilize resource,
+                            and co-create climate solutions, share ideas, and mobilize resources for climate action.
+                        </p>
+                    </div><!-- end icon-wrapper -->
+                </div><!-- end col -->
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <div class="horizontal-content">
+                            <i class="flaticon-cloud-computing-1 global-radius effect-1"></i>
+                            <h3>Ecosystem Building and Networking</h3>
+                        </div>
+                        <p>Beyond co-creating and fostering collaboration among activists and local youth organizations,
+                            we aim to connect them to a wider ecosystem of partners, experts, supporters, funders,
+                            networks, events, and collaborations within and beyond.
+                        </p>
+                    </div><!-- end icon-wrapper -->
+                </div><!-- end col -->
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <div class="horizontal-content">
+                            <i class="flaticon-world-wide-web global-radius effect-1"></i>
+                            <h3>Mentorship and Coaching</h3>
+                        </div>
+                        <p>Need help getting your idea off the ground? We match grassroots activists, changemakers, and
+                            organizations with mentors and coaches that support them as they ideate, build, and launch
+                            their climate initiatives and projects.
+                        </p>
+                    </div><!-- end icon-wrapper -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/greenspace/home - youth platform.jpg" alt="" class="img-fluid img-rounded">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h4>at the heart of climate change</h4>
+                        <h2>Leading Improbable Youth Engagement in Climate Action Implementation Process</h2>
+                        <p>While young people are at the heart of climate change, system change will require the right
+                            stakeholders. That is why we work with stakeholders to build the appropriate framework and
+                            tools for youth engagement in climate action implementation processes. We bring together
+                            Inter-generations, authorities, local communities, businesses, grassroots youth,
+                            policymakers, media, and funders to engage and develop the necessary framework and tools
+                            that ensure effective youth engagement and support for youth-led climate action.</p>
+                        <a href="#" class="hover-btn-new"><span>Learn more about our framework and Tools </span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h4>Giving young people a voice, a chance and a platform to speak and be heard</h4>
+                        <h2>Youth Climate Advocacy </h2>
+                        <p>Giving young people a voice, a chance and a platform to speak and be heard</p>
+                        <p>
+                            We are mobilizing thousands of grassroots activists and youths and giving them a voice to
+                            share what matters most to them, their stories, challenges, and ideas with the world.
+                            Climate Action Start with young people. Listen to them speak
+
+                        </p>
+                        <a href="#" class="hover-btn-new"><span>Learn More</span></a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/greenspace/DSC_1135.JPG" alt=""
+                            class="img-fluid img-rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimonials" class="parallax section db parallax-off"
+        style="background-image:url('images/parallax_04.jpg');">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Eco Voices</h3>
+                <p>Eco Voices From The Grassroots</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Young girls ... continue to suffer</h3>
+                                <p class="lead">Young girls like myself living in rural continue to suffer from the
+                                    impacts of climate change. Severe weather and flooding continues to disrupt our
+                                    education with many young people losing several schools hours annually. Our future
+                                    is determined by our actions, which is why we are the ultimate solution provider to
+                                    the climate crisis.”</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="images/voices/Beryl.jpg" alt="" class="img-fluid rounded">
+                                <h4>Lemnyuy Beryl </h4>
+                            </div>
+
+                        </div>
+
+
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Climate change is real and scary</h3>
+                                <p class="lead">Climate change is real and scary. The more sensitization we can get, the
+                                    better it is to prompt corresponding action</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="images/voices/Mih.jpg" alt="" class="img-fluid rounded">
+                                <h4>MIH Sih Adeline </h4>
+                            </div>
+
+                        </div>
+
+
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i>Youth have a unique role to play</h3>
+                                <p class="lead">Youths have a unique role to play in the fight against climate change.
+                                    They are the future, and they can help to create a more sustainable world through
+                                    climate advocacy, reduce their carbon foot print and organize activities such as
+                                    tree planting, beach clean-up and other environmental initiatives </p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="images/voices/Claudia.jpg" alt="" class="img-fluid rounded">
+                                <h4>Njodzeka Claudia</h4>
+                            </div>
+
+                        </div>
+
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i>Disproportionately affected by climate change</h3>
+                                <p class="lead">Equipping young girls to participate in climate change initiatives is
+                                    essential to ensure that their needs are taken into account.</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="images/voices/Fortunate.jpg" alt="" class="img-fluid rounded">
+                                <h4>Fortunate</h4>
+                            </div>
+
+                        </div>
+
+
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> There is urgent need for financial inclusivity</h3>
+                                <p class="lead">There is urgent need for financial inclusivity and funding of youth-led
+                                    climate solutions. The climate crisis is becoming more terrifying, with disastrous
+                                    consequences for us young people. We need a sit on the table to help restore and
+                                    preserve the beauty of our planet. We have solutions and understand how to deal with
+                                    the crisis. But, we lack the necessary support and finances to bring our ideas to
+                                    life</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="images/voices/Abigail.jpg" alt="" class="img-fluid rounded">
+                                <h4>Abbigail</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

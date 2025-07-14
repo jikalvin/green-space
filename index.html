@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Green Space Academy</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="images/Green_4.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+    <script>
+        function loadHeaderAndFooter() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('header').innerHTML = html;
+                });
+
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('footer').innerHTML = html;
+                });
+        }
+        loadHeaderAndFooter();
+    </script>
+
+</head>
+<body class="host_version"> 
+
+    <!-- LOADER -->
+	<!-- <div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div> -->
+	<!-- END LOADER -->	
+	
+	<!-- Start header -->
+	<div id="header"></div>
+	<!-- End header -->
+	
+	<div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel" data-pause="hover" data-interval="false" >
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div id="home" class="first-section" style="background-image:url('images/greenspace/1708590650154.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-center">
+									<div class="big-tagline">
+										<h2><strong>Engaging, Equipping, and Inspiring African leaders to lead climate action</strong></h2>
+										<p class="lead">Bridging the gap between climate knowledge and action for a sustainable future.</p>
+										<a href="#" class="hover-btn-new btn-primary" style="margin-right: 20px;"><span>Donate</span></a>
+										<a href="#overviews" class="hover-btn-new btn-secondary"><span>Explore our programs</span></a>
+									</div>
+								</div>
+							</div>            
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			<span class="fa fa-angle-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			<span class="fa fa-angle-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	
+    <div id="overviews" class="section lb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>What We Do</h3>
+                    <p class="lead">We are bridging the gap between climate knowledge and action by empowering young people across Africa to lead solutions that restore ecosystems, transform economies, and inspire hope.</p>
+                </div>
+            </div>
+            <div class="row align-items-stretch">
+                <div class="col-md-4">
+                    <div class="message-box h-100">
+                        <h4>Environmental Education</h4>
+                        <p>We cultivate curiosity and lifelong stewardship, introducing climate literacy, hands-on science, and sustainable living skills from childhood to young adulthood.</p>
+                        <a href="environmental-education.html" class="hover-btn-new"><span>Read More →</span></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="message-box h-100">
+                        <h4>Youth Climate Platform</h4>
+                        <p>We empower young people with the tools, resources, and support to co-create and scale practical climate solutions, restoring ecosystems, advancing clean energy, transforming agriculture, and building green enterprises that drive local resilience.</p>
+                        <a href="youth-climate-adaptability-hub.html" class="hover-btn-new"><span>Read More →</span></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="message-box h-100">
+                        <h4>Climate Advocacy and Leadership</h4>
+                        <p>We amplify youth voices to shape policy, shift narratives, and build powerful movements that inspire climate action across Africa.</p>
+                        <a href="collaboration-and-advocacy.html" class="hover-btn-new"><span>Read More →</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section cl">
+		<div class="container">
+			<div class="row text-left stat-wrap" style="background: none;">
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<!-- <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-school-bus"></i></span> -->
+					<p class="stat_count">3561</p>
+					<h3>Youth Engaged</h3>
+				</div>
+
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<!-- <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-house"></i></span> -->
+					<p class="stat_count">3200</p>
+					<h3>Trees Planted</h3>
+				</div>
+
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<!-- <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-folder"></i></span> -->
+					<p class="stat_count">10</p>
+					<h3>Projects Implemented</h3>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<!-- <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-folder"></i></span> -->
+					<p class="stat_count">26654</p>
+					<h3>Reached And Impacted</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="hosting" class="section wb" style="background: rgb(248, 248, 248)">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Our Impact</h3>
+                <p class="lead">
+                    Projects and updates from Green Space Academy
+                </p>
+            </div><!-- end title -->
+
+            <div class="row dev-list text-center">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="widget server clearfix">
+                        <img src="images/greenspace/about - mission.jpg" alt="" class="img-fluid">
+						<div class="inner-dit">
+							<div class="widget-title">
+								<h3>YOUTH CLIMATE ACCELERATOR</h3>
+							</div>
+							<!-- end title -->
+							<p>
+								Youth Climate Accelerator is a six-month program that seeks to inspire, prepare, and mobilize the next generation of African climate leaders who provide sustainable solutions to the climate problems facing Africa and our planet through holistic training and mentorship. The Youth Climate accelerator empowers and expands the role of African youths in climate action
+							</p>
+						</div>
+						
+                        <hr> 
+
+                        <!-- <div class="footer-social">
+                            <a href="#" class="btn global-radius" data-toggle="tooltip" data-placement="top" title="Free Page Builder"><i class="flaticon-coding"></i></a>
+                            <a href="#" class="btn global-radius" data-toggle="tooltip" data-placement="top" title="WordPress Support"><i class="flaticon-wordpress-logo"></i></a>
+                            <a href="#" class="btn global-radius" data-toggle="tooltip" data-placement="top" title="1 Domain Free"><i class="flaticon-world-wide-web"></i></a>
+                            <a href="#" class="btn global-radius"  data-toggle="tooltip" data-placement="top" title="50MB Bandwdith"><i class="flaticon-cloud-computing-1"></i></a>
+                        </div> -->
+
+                        <hr>
+
+                    </div><!--widget -->
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                    <div class="widget server clearfix">
+                        <img src="images/greenspace/DSC_6102.JPG" alt="" class="img-fluid">
+						<div class="inner-dit">
+							<div class="widget-title">
+								<h3>YOUTH GRASSROOTS CLIMATE ACTION</h3>
+							</div>
+							<!-- end title -->
+							<p>
+								Youths in grassroots communities across Sub-Saharan Africa are among the most vulnerable to climate change, bearing the brunt of the crisis. Despite this, over 70% of youths in these communities are unaware of the dangers posed by climate change, and they are regularly underrepresented and excluded from global dialogue
+							</p>
+						</div>
+
+                        <hr> 
+
+                        <!-- <div class="footer-social">
+                            <a href="#" class="btn global-radius" data-toggle="tooltip" data-placement="top" title="Free Page Builder"><i class="flaticon-coding"></i></a>
+                            <a href="#" class="btn global-radius" data-toggle="tooltip" data-placement="top" title="WordPress Support"><i class="flaticon-wordpress-logo"></i></a>
+                            <a href="#" class="btn global-radius" data-toggle="tooltip" data-placement="top" title="1 Domain Free"><i class="flaticon-world-wide-web"></i></a>
+                            <a href="#" class="btn global-radius"  data-toggle="tooltip" data-placement="top" title="150MB Bandwdith"><i class="flaticon-cloud-computing-1"></i></a>
+                            <a href="#" class="btn global-radius"  data-toggle="tooltip" data-placement="top" title="Money Back Guarentee"><i class="flaticon-money"></i></a>
+                        </div> -->
+                        <hr>
+
+                    </div><!--widget -->
+                </div><!-- end col -->
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                    <div class="widget server clearfix">
+                        <img src="images/greenspace/285978915_2965127820451752_3594837076376827138_n.jpg" alt="" class="img-fluid">
+						<div class="inner-dit">
+							<div class="widget-title">
+								<h3>ECO-SCHOOL GARDENS</h3>
+							</div>
+							<!-- end title -->
+							<p>
+								Many young people are completely disconnected from nature and unaware of where their food is grown. Green Space Academy provides students with the opportunity to learn how to grow food in ways that fight climate change and regenerate our earth.
+							</p>
+						</div>
+
+                        <hr> 
+
+                        <!-- <div class="footer-social">
+                            <a href="#" class="btn global-radius" data-toggle="tooltip" data-placement="top" title="Free Page Builder"><i class="flaticon-coding"></i></a>
+                            <a href="#" class="btn global-radius" data-toggle="tooltip" data-placement="top" title="WordPress Support"><i class="flaticon-wordpress-logo"></i></a>
+                            <a href="#" class="btn global-radius" data-toggle="tooltip" data-placement="top" title="1 Domain Free"><i class="flaticon-world-wide-web"></i></a>
+                            <a href="#" class="btn global-radius"  data-toggle="tooltip" data-placement="top" title="150MB Bandwdith"><i class="flaticon-cloud-computing-1"></i></a>
+                            <a href="#" class="btn global-radius"  data-toggle="tooltip" data-placement="top" title="Money Back Guarentee"><i class="flaticon-money"></i></a>
+                        </div> -->
+                        <hr>
+
+                    </div><!--widget -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('images/parallax_04.jpg');">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Eco Voices</h3>
+                <p>Eco Voices From The Grassroots</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Young girls ... continue to suffer</h3>
+                                <p class="lead">Young girls like myself living in rural continue to suffer from the impacts of climate change. Severe weather and flooding continues to disrupt our education with many young people losing several schools hours annually. Our future is determined by our actions, which is why we are the ultimate solution provider to the climate crisis.”</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="images/voices/Beryl.jpg" alt="" class="img-fluid rounded">
+                                <h4>Lemnyuy Beryl </h4>
+                            </div>
+                            
+                        </div>
+                        
+
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Climate change is real and scary</h3>
+                                <p class="lead">Climate change is real and scary. The more sensitization we can get, the better it is to prompt corresponding action</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="images/voices/Mih.jpg" alt="" class="img-fluid rounded">
+                                <h4>MIH Sih Adeline </h4>
+                            </div>
+                            
+                        </div>
+                        
+
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i>Youth have a unique role to play</h3>
+                                <p class="lead">Youths have a unique role to play in the fight against climate change. They are the future, and they can help to create a more sustainable world through climate advocacy, reduce their carbon foot print and organize activities such as tree planting, beach clean-up and other environmental initiatives </p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="images/voices/Claudia.jpg" alt="" class="img-fluid rounded">
+                                <h4>Njodzeka Claudia</h4>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i>Disproportionately affected by climate change</h3>
+                                <p class="lead">Equipping young girls to participate in climate change initiatives is essential to ensure that their needs are taken into account.</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="images/voices/Fortunate.jpg" alt="" class="img-fluid rounded">
+                                <h4>Fortunate</h4>
+                            </div>
+                            
+                        </div>
+                        
+
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> There is urgent need for financial inclusivity</h3>
+                                <p class="lead">There is urgent need for financial inclusivity and funding of youth-led climate solutions. The climate crisis is becoming more terrifying, with disastrous consequences for us young people. We need a sit on the table to help restore and preserve the beauty of our planet. We have solutions and understand how to deal with the crisis. But, we lack the necessary support and finances to bring our ideas to life</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="images/voices/Abigail.jpg" alt="" class="img-fluid rounded">
+                                <h4>Abbigail</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax section dbcolor">
+        <div class="container">
+            <div class="row logos">
+                <div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/partners/ppgiew01.svg" alt="" class="img-repsonsive" height="100px"></a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/partners/iDFPwG01.svg" alt="" class="img-repsonsive" height="100px"></a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/partners/TotEcv01.svg" alt="" class="img-repsonsive" height="100px"></a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/partners/v0stWB01.svg" alt="" class="img-repsonsive" height="100px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <script src="js/all.js"></script>
+    <script src="js/custom.js"></script>
+	<script src="js/timeline.min.js"></script>
+    <script src="behaviour.js"></script>
+	<script>
+		timeline(document.querySelectorAll('.timeline'), {
+			forceVerticalMode: 700,
+			mode: 'horizontal',
+			verticalStartPosition: 'left',
+			visibleItems: 4
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>Green Space Academy</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/Green_4.png" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="shortcut icon" href="images/Green_4.png" type="image/x-icon">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+<script>
+    // Function to load header and footer
+    function loadHeaderAndFooter() {
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    }
+
+    // Call the function to load header and footer
+    loadHeaderAndFooter();
+</script>
+
+</head>
+
+<body class="host_version">
+
+    <!-- Start header -->
+    <div id="header"></div>
+    <!-- End header -->
+
+    <div class="all-title-box">
+        <div class="all-title-box-4-overlay"></div>
+        <div class="container text-center">
+            <h1>Contact<span class="m_1">We will love to hear from you</span></h1>
+        </div>
+    </div>
+
+    <div id="support" class="section wb">
+        <div class="container-fulid">
+            <div class="section-title text-center">
+                <h3>We will love to hear from you</h3>
+                <p class="lead">We at Green Space Academy will love to hear from you <br>Join our ever expanding family</p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-xl-6 col-md-12 col-sm-12">
+                    <div class="contact_form">
+                        <div id="message"></div>
+                        <form id="contactform" class="" action="contact.php" name="contactform" method="post">
+                            <fieldset class="row row-fluid">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="first_name" id="first_name" class="form-control"
+                                        placeholder="First Name">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="last_name" id="last_name" class="form-control"
+                                        placeholder="Last Name">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="email" name="email" id="email" class="form-control"
+                                        placeholder="Your Email">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="phone" id="phone" class="form-control"
+                                        placeholder="Your Phone">
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <textarea class="form-control" name="comments" id="comments" rows="6"
+                                        placeholder="Give us more details.."></textarea>
+                                </div>
+                                <div class="text-center pd">
+                                    <button type="submit" value="SEND" id="submit"
+                                        class="btn btn-light btn-radius btn-brd grd1 btn-block">Get a Quote</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-xl-6 col-md-12 col-sm-12">
+                    <div class="map-box">
+                        <div id="custom-places" class="small-map"></div>
+                    </div>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div class="parallax section dbcolor">
+        <div class="container">
+            <div class="row logos">
+                <div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/partners/ppgiew01.svg" alt="" class="img-repsonsive" height="100px"></a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/partners/iDFPwG01.svg" alt="" class="img-repsonsive" height="100px"></a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/partners/TotEcv01.svg" alt="" class="img-repsonsive" height="100px"></a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/partners/v0stWB01.svg" alt="" class="img-repsonsive" height="100px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> We are a youth-led climate initiative established in 2021 with a Seed Grant from Earth Rising Foundation to accelerate youth engagement in climate action in grassroots communities. We offer comprehensive training programs, create diverse opportunities for youth involvement and empowerment, and lead policy and advocacy to ensure that youth voices are heard and integrated into decision-making processes. Our unique approach bridges the gap between climate knowledge and action by providing practical tools and resources for youth to be key actors in community development</p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Programs</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="youth-green-skills.html">Youth Green Skills</a></li>
+                            <li><a href="collaboration-and-advocacy.html">Collaboration And Advocacy</a></li>
+                            <li><a href="youth-climate-platform.html">Youth Climate Platform</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+    
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">info@greenspaceacademy.com</a></li>
+                            <li><a href="#">www.greenspaceacademy.com</a></li>
+                            <li><a href="https://wa.link/a81cnc">+237 6 70 35 02 01</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCKjLTXdq6Db3Xit_pW_GK4EXuPRtnod4o"></script>
+    <!-- Mapsed JavaScript -->
+    <script src="js/mapsed.js"></script>
+    <script src="js/01-custom-places-example.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

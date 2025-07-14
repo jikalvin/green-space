@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>Green Space Academy</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/Green_4.png" type="image/x-icon">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="shortcut icon" href="images/Green_4.png" type="image/x-icon">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+<script>
+  // Function to load header and footer
+  function loadHeaderAndFooter() {
+    // Load header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header').innerHTML = html;
+      });
+
+    // Load footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+      });
+  }
+
+  // Call the function to load header and footer
+  loadHeaderAndFooter();
+</script>
+
+</head>
+
+<body class="host_version">
+
+  <!-- LOADER -->
+  <!-- <div id="preloader">
+    <div class="loader-container">
+      <div class="progress-br float shadow">
+        <div class="progress__item"></div>
+      </div>
+    </div>
+  </div> -->
+  <!-- END LOADER -->
+
+  <!-- Start header -->
+  <div id="header"></div>
+  <!-- End header -->
+
+  <div class="all-title-box-3">
+    <div class="all-title-box-4-overlay"></div>
+    <div class="container text-center">
+      <h1>Youth Green Skills
+        <span class="m_1">
+          Equipping African Climate Leaders
+        </span>
+      </h1>
+    </div>
+  </div>
+
+  <div id="overviews" class="section lb">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Youth Green Skills Matter</h2>
+        <p>We mobilize and engage individuals and youth groups <br> to build a common agenda</p>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+          <div class="message-box">
+            <!-- <h4>2018 BEST WEB HOSTING COMPANY</h4> -->
+            <h2>Cultivating green skills among youth</h2>
+            <p>In an era defined by environmental concerns and the urgent need for sustainable solutions,
+              cultivating green skills among youth is essential. By empowering young people with the
+              knowledge and abilities to understand, protect, and enhance the environment, we are
+              investing in a future where environmental stewardship is a fundamental part of everyday
+              life.</p>
+            <a href="#" class="hover-btn-new"><span>Join Today</span></a>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+          <div class="post-media wow fadeIn">
+            <img src="images/greenspace/A cross section of the Green space Climate Smart Garden.jpg" alt="" class="img-fluid img-rounded">
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="horizontal-content">
+              <i class="flaticon-renewable-energy global-radius effect-1"></i>
+              <h3>Renewable Energy </h3>
+            </div>
+            <p>Our activities focus on building capacities and empowering young people towards action on the energy transition. We offer a unique, non-formal hand-on disruptive training to build capacities of young people on renewable energy, as well as help them develop and implement clean energy solutions. 
+            </p>
+          </div><!-- end icon-wrapper -->
+        </div><!-- end col -->
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+            <div class="horizontal-content">
+              <i class="flaticon-green-agricultural-solutions global-radius effect-1"></i>
+              <h3>Green Agricultural Solutions</h3>
+            </div>
+            <p>We help young people understand where they food comes from as we engage and provide practical hands-on training on sustainable agricultural practices such as regenerative community gardening, organic urban gardening, and climate-smart agricultural technology solutions.
+            </p>
+          </div><!-- end icon-wrapper -->
+        </div><!-- end col -->
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+            <div class="horizontal-content">
+              <i class="flaticon-waste-management-and-recycling global-radius effect-1"></i>
+              <h3>Waste Management and Recycling</h3>
+            </div>
+            <p>We work with young people to transform households waste into cash. We provide practical training that help young people develop solutions to waste challenges in their communities from waste collection, recycling to waste disposal. 
+            </p>
+          </div><!-- end icon-wrapper -->
+        </div><!-- end col -->
+      </div><!-- end row -->
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+  <!-- ALL JS FILES -->
+  <script src="js/all.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- ALL PLUGINS -->
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>
