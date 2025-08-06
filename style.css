@@ -2761,6 +2761,7 @@ body.host_version .first-section .effect-1.slide-btn::after{
 .all-title-box-1, 
 .all-title-box-2, 
 .all-title-box-3,
+.all-title-box-5,
 .all-title-box-4 {
     background: url(images/greenspace/2348154580684_status_73f33a5680304ef2bc13f65be9832a32.jpg) no-repeat;
     -webkit-background-size: cover;
@@ -2821,9 +2822,21 @@ body.host_version .first-section .effect-1.slide-btn::after{
 	font-size: 48px;
 	line-height: 0px;
 }
+.all-title-box-5 h1{
+	color: #fff;
+	font-weight: 600;
+	text-transform: capitalize;
+	padding-top: 11%;
+	font-size: 48px;
+	line-height: 0px;
+}
 
 .all-title-box-1{
     background: url(images/greenspace/about\ -\ 2.jpg) no-repeat;
+    background-size: cover;
+}
+.all-title-box-5{
+    background: url(https://i.postimg.cc/NFLMvN3f/Cover-image.jpg) no-repeat;
     background-size: cover;
 }
 .all-title-box-2{
